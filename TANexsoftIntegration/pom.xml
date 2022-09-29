@@ -1,3 +1,8 @@
+<!-- Author : Runanto
+ Created-date: 24/09/2022
+ Modifier : Runanto
+ Modifed date: 30/09/2022 01.00
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>TANexsoftIntegration</groupId>
@@ -21,10 +26,10 @@
 			 		<groupId>org.apache.maven.plugins</groupId>
 				    <artifactId>maven-compiler-plugin</artifactId>
 				    <version>3.7.0</version>
-				  <!--  <configuration>
-				    	<source>1.8</source>
-				    	<target>1.8</target>
-				    </configuration> -->
+				  <configuration>
+				    	<!-- <source>1.8</source>
+				    	<target>1.8</target> -->
+				    </configuration>
 				 </plugin>
 				 
 				 <plugin>
@@ -35,7 +40,7 @@
 				    	<archive>
 				    		<manifest>
 				    			<addClasspath>true</addClasspath>
-				    			<mainClass>cucumber.RoadRunner</mainClass>
+				    			<mainClass>com.sqa.psikotes.GenerateJar</mainClass>
 				    		</manifest>
 				    	</archive>
 				    	<descriptorRefs>

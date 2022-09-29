@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-30T01:21:46 WIB" name="Default suite" finished-at="2022-09-30T01:23:44 WIB" duration-ms="117823">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-09-30T01:21:46 WIB" name="Default test" finished-at="2022-09-30T01:23:44 WIB" duration-ms="117823">
+      <class name="com.sqa.psikotes.framework.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:21:46 WIB" name="setUpClass" finished-at="2022-09-30T01:21:47 WIB" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3220c28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:21:47 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:21:54 WIB" duration-ms="7086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSLP001001 admin login valid click button signin"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSLP001 Admin login valid ke web"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:21:54 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:21:59 WIB" duration-ms="4948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSLP001002 Admin login valid click button green username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSLP001 Admin login valid ke web"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:21:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:22:03 WIB" duration-ms="4300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSLP001002 admin login valid click button green password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSLP001 Admin login valid ke web"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:22:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:22:10 WIB" duration-ms="6837" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSAP001001 Admin masuk ke halaman admin"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSAP001 Masuk halaman admin"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:22:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:22:16 WIB" duration-ms="6497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSDU001001 Admin ingin membuka halaman data Admin"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSDU001 Membuka halaman Data Users"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:22:16 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:22:29 WIB" duration-ms="12843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSDU002001 Admin ingin mencari data yang ada berdasarkan name menggunakan tombol search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSDU002 Admin mencari data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:22:29 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:22:43 WIB" duration-ms="13464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSDU002002N Admin ingin mencari data yang ada berdasarkan name menggunakan tombol berwarna hijau"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSDU002 Admin mencari data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:22:43 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:22:54 WIB" duration-ms="10909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSDU002003 Admin ingin mencari data yang ada berdasarkan name menggunakan enter pada keyboard"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSDU002 Admin mencari data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:22:54 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:23:07 WIB" duration-ms="12975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSDU002004 Admin ingin mencari data yang ada berdasarkan email menggunakan tombol search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSDU002 Admin mencari data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:23:07 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:23:20 WIB" duration-ms="12984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSDU002005N Admin ingin mencari data yang ada berdasarkan email menggunakan tombol berwarna hijau"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSDU002 Admin mencari data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:23:20 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:23:31 WIB" duration-ms="10996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSDU002006 Admin ingin mencari data yang ada berdasarkan email menggunakan enter pada keyboard"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSDU002 Admin mencari data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:23:31 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-30T01:23:44 WIB" duration-ms="13043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSDU002007 Admin ingin mencari data yang ada berdasarkan status menggunakan tombol search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSDU002 Admin mencari data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@2767e23c]" started-at="2022-09-30T01:23:44 WIB" name="tearDownClass" finished-at="2022-09-30T01:23:44 WIB" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.sqa.psikotes.framework.runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
