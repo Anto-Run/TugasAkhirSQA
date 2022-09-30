@@ -30,13 +30,14 @@ public class TestSearchData {
 		extentTest = SceneHooks.extentTest;
 	}
 	
-	@Given("Admin harus klik field search Data Users pada halaman Data Users")
-	public void admin_harus_klik_field_search_data_users_pada_halaman_data_users() {
+	@Given("TSDU002 Admin harus klik field search Data Users pada halaman Data Users")
+	public void tsdu002_admin_harus_klik_field_search_data_users_pada_halaman_data_users() {
 		driver.get(Constants.URL);
 		dataUsers.clickOk();
 		dataUsers.clickTask();
 		dataUsers.clickDataUsers();
 		dataUsers.clickInsSearch();
+		extentTest.log(LogStatus.PASS, "Admin harus klik field search Data Users pada halaman Data Users");
 	}
 
 //	search name with button search

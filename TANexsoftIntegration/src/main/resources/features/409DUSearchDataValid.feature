@@ -3,7 +3,7 @@
 #Modified_date: 
 Feature: TSDU002 Admin mencari data
 	    Background:
-	    	Given Admin harus klik field search Data Users pada halaman Data Users
+	    	Given TSDU002 Admin harus klik field search Data Users pada halaman Data Users
 
   @tag1
   Scenario: TSDU002001 Admin ingin mencari data yang ada berdasarkan name menggunakan tombol search

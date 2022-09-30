@@ -35,81 +35,105 @@ public class TestLoginValid {
 		extentTest = SceneHooks.extentTest;
 	}
 	
-	@Given("Admin go to page login")
-	public void admin_go_to_page_login() {
+	
+	@Given("TSLP001 Admin berhasil masuk halaman Login")
+	public void tslp001_admin_berhasil_masuk_halaman_login() {
 		driver.get(Constants.URL);
-		extentTest.log(LogStatus.PASS, "Browser open page login");
+		extentTest.log(LogStatus.PASS, "Admin berhasil masuk halaman login");
 	}
 
-	@When("TSLP001001 admin enter username and password valid")
-	public void tslp001001_admin_enter_username_and_password_valid() {
+	@When("TSLP001001 Admin memasukan username dan password valid")
+	public void tslp001001_admin_memasukan_username_dan_password_valid() {
 		String username = "developer";
 		String password = "23";
 		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
 		loginPage.loginValidOne(username, password);
-		extentTest.log(LogStatus.PASS, "admin_valid_username_and_password");
-
+		extentTest.log(LogStatus.PASS, "admin memasukan username dan password valid");
 	}
 
-	@When("TSLP001001 admin click button sign in")
-	public void tslp001001_admin_click_button_sign_in() {
-	  loginPage.clickBtnSignIn();
-	  extentTest.log(LogStatus.PASS, "button sign in clicked");
+	@When("TSLP001001 Admin menekan tombol sign in")
+	public void tslp001001_admin_menekan_tombol_sign_in() {
+		 loginPage.clickBtnSignIn();
+		  extentTest.log(LogStatus.PASS, "admin menekan tombol sign in");
 	}
-
-	@Then("TSLP001001 The system check credentsial login valid")
-	public void tslp001001_the_system_check_credentsial_login_valid() {
+	
+	@Then("TSLP001001 Admin berhasil masuk halaman utama psikotes")
+	public void tslp001001_admin_berhasil_masuk_halaman_utama_psikotes() {
 		String strExpect ="PSIKOTES";
 		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
-		extentTest.log(LogStatus.PASS, "System check credentials valid login");
+		extentTest.log(LogStatus.PASS, "admin berhasil masuk halaman utama psikotes");
 		Utils.delay(1, Constants.CHROME);
 		DriverSingleton.closeObjectInstance();
 	}
 
-	@When("TSLP001002 admin enter username and password valid")
-	public void tslp001002_admin_enter_username_and_password_valid() {
+	@When("TSLP001N002 Admin memasukan username dan password valid")
+	public void tslp001n002_admin_memasukan_username_dan_password_valid() {
 		String username = "developer";
 		String password = "23";
 		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
 		loginPage.loginValidOne(username, password);
-		extentTest.log(LogStatus.PASS, "admin_valid_username_and_password");
+		extentTest.log(LogStatus.PASS, "admin memasukan username dan password valid");
 	}
 
-	@When("TSLP001002 admin click button green username")
-	public void tslp001002_admin_click_button_green_username() {
-		loginPage.clickBtnGreenUsername();
-		extentTest.log(LogStatus.PASS, "button green username clicked");
+	@When("TSLP001N002 Admin menekan tombol green button username")
+	public void tslp001n002_admin_menekan_tombol_green_button_username() {
+		 loginPage.clickBtnGreenUsername();
+		 extentTest.log(LogStatus.PASS, "admin menekan tombol green username");
 	}
-
-	@Then("TSLP001002 The system check credentsial login valid")
-	public void tslp001002_the_system_check_credentsial_login_valid() {
+	
+	@Then("TSLP001N002 Admin berhasil masuk halaman utama psikotes")
+	public void tslp001N002_admin_berhasil_masuk_halaman_utama_psikotes() {
 		String strExpect ="PSIKOTES";
 		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
-		extentTest.log(LogStatus.PASS, "System check credentials valid login");
+		extentTest.log(LogStatus.PASS, "admin berhasil masuk halaman utama psikotes");
 		Utils.delay(1, Constants.CHROME);
 		DriverSingleton.closeObjectInstance();
 	}
 
-	@When("TSLP001003 admin enter username and password valid")
-	public void tslp001003_admin_enter_username_and_password_valid() {
+	@When("TSLP001N003 Admin memasukan username dan password valid")
+	public void tslp001n003_admin_memasukan_username_dan_password_valid() {
 		String username = "developer";
 		String password = "23";
 		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
 		loginPage.loginValidOne(username, password);
-		extentTest.log(LogStatus.PASS, "admin_valid_username_and_password");
+		extentTest.log(LogStatus.PASS, "admin memasukan username dan password valid");
 	}
 
-	@When("TSLP001003 admin click button green password")
-	public void tslp001003_admin_click_button_green_password() {
-		loginPage.clickBtnGreenPassword();
-		extentTest.log(LogStatus.PASS, "button green password clicked");
+	@When("TSLP001N003 Admin menekan tombol green button password")
+	public void tslp001n003_admin_menekan_tombol_green_button_password() {
+		 loginPage.clickBtnGreenPassword();
+		 extentTest.log(LogStatus.PASS, "admin menekan tombol green password");
 	}
-
-	@Then("TSLP001003 he system check credentsial login valid")
-	public void tslp001003_he_system_check_credentsial_login_valid() {
+	@Then("TSLP001N003 Admin berhasil masuk halaman utama psikotes")
+	public void tslp001N003_admin_berhasil_masuk_halaman_utama_psikotes() {
 		String strExpect ="PSIKOTES";
 		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
-		extentTest.log(LogStatus.PASS, "System check credentials valid login");
+		extentTest.log(LogStatus.PASS, "admin berhasil masuk halaman utama psikotes");
+		Utils.delay(1, Constants.CHROME);
+		DriverSingleton.closeObjectInstance();
+	}
+	
+
+	@When("TSLP001004 Admin memasukan username dan password valid")
+	public void tslp001004_admin_memasukan_username_dan_password_valid() {
+		String username = "developer";
+		String password = "23";
+		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
+		loginPage.loginValidOne(username, password);
+		extentTest.log(LogStatus.PASS, "admin memasukan username dan password");
+	}
+
+	@When("TSLP001004 Admin menekan tombol enter keyboard")
+	public void tslp001004_admin_menekan_tombol_enter_keyboard() {
+		 loginPage.clickEnterPassword();
+		 extentTest.log(LogStatus.PASS, "admin menekan tombol enter keyboard");
+	}
+	
+	@Then("TSLP001004 Admin berhasil masuk halaman utama psikotes")
+	public void tslp001004_admin_berhasil_masuk_halaman_utama_psikotes() {
+		String strExpect ="PSIKOTES";
+		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
+		extentTest.log(LogStatus.PASS, "admin berhasil masuk halaman utama psikotes");
 	}
 	
 

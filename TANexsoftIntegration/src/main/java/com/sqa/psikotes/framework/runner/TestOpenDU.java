@@ -24,8 +24,8 @@ public class TestOpenDU {
 		extentTest = SceneHooks.extentTest;
 	}
 	
-	@Given("Admin harus membuka halaman utama web")
-	public void admin_go_to_page_login() {
+	@Given("TSDU001 Admin harus membuka halaman utama web")
+	public void tsdu001admin_go_to_page_login() {
 		driver.get(Constants.URL);
 //		String username = "developer";
 //		String password = "23";

@@ -34,6 +34,7 @@ public class TestAdminPageValid {
 	public void tsap001001_admin_berhasil_masuk_halaman_utama_web() {
 		driver.get(Constants.URL);
 		adminPage.clickOk();
+		extentTest.log(LogStatus.PASS, "Admin berhasil masuk halaman utama web");
 	}
 
 	@When("TSAP001001 Admin klik Menu User Management")

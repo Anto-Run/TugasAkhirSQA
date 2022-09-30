@@ -3,7 +3,7 @@
 #Modified_date: 
 Feature: TSDU001 Membuka halaman Data Users
 	Background:
-	    Given Admin harus membuka halaman utama web
+	    Given TSDU001 Admin harus membuka halaman utama web
 
 	@tag1
   Scenario: TSDU001001 Admin ingin membuka halaman data Admin

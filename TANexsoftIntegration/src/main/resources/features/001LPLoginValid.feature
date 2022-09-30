@@ -2,25 +2,34 @@
 #Created_date: 29-09-2022
 #Modified_date: 
 
+
 Feature: TSLP001 Admin login valid ke web
 	Background:
-	    Given Admin go to page login
+	    Given TSLP001 Admin berhasil masuk halaman Login
 
 	@tag1
-  Scenario: TSLP001001 admin login valid click button signin
-    When TSLP001001 admin enter username and password valid
-    And TSLP001001 admin click button sign in
-    Then TSLP001001 The system check credentsial login valid
+  Scenario: TSLP001001 Admin login valid dan menekan tombol sign in
+    When TSLP001001 Admin memasukan username dan password valid
+    And TSLP001001 Admin menekan tombol sign in
+    Then TSLP001001 Admin berhasil masuk halaman utama psikotes
 
 	@tag2
-   Scenario: TSLP001002 Admin login valid click button green username
-    When TSLP001002 admin enter username and password valid
-    And TSLP001002 admin click button green username
-    Then TSLP001002 The system check credentsial login valid
+   Scenario: TSLP001N002 Admin login valid dan menekan tombol enter (green button) username
+    When TSLP001N002 Admin memasukan username dan password valid
+    And TSLP001N002 Admin menekan tombol green button username
+    Then TSLP001N002 Admin berhasil masuk halaman utama psikotes
     
   @tag3
-   Scenario: TSLP001002 admin login valid click button green password
-    When TSLP001003 admin enter username and password valid
-    And TSLP001003 admin click button green password
-    Then TSLP001003 he system check credentsial login valid
+   Scenario: TSLP001N003 Admin login valid dan menekan tombol enter (green button) password
+    When TSLP001N003 Admin memasukan username dan password valid
+    And TSLP001N003 Admin menekan tombol green button password
+    Then TSLP001N003 Admin berhasil masuk halaman utama psikotes
+    
+   @tag4
+   Scenario: TSLP001004 Admin login valid dan menekan enter keyboard
+    When TSLP001004 Admin memasukan username dan password valid
+    And TSLP001004 Admin menekan tombol enter keyboard
+    Then TSLP001004 Admin berhasil masuk halaman utama psikotes
+ 
+ 
  

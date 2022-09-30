@@ -106,7 +106,7 @@ public class LoginPage {
 	}
 	
 	public void clickEnterPassword() {
-		
+		this.txtPassword.sendKeys(Keys.ENTER);
 	}
 	
 	
