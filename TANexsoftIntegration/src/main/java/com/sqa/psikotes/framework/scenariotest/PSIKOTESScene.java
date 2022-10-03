@@ -1,32 +1,31 @@
-//Author : Runanto
-//Created-date: 29-09-2022 13.00
-//Modifer:Runanto
-//Modifed date: 29/09/2022 23.00
+/*
+ * Author : Runanto
+ * Created-date: 29-09-2022 13.00
+ * Modifer:Runanto
+ * Modifed date: 01/10/2022 16.00
+ */
 
 package com.sqa.psikotes.framework.scenariotest;
 
 public enum PSIKOTESScene {
 
 
-	R1("TSLP001001 admin login valid click button signin"),
-	R2("TSLP001002 Admin login valid click button green username"),
-	R3("TSLP001002 admin login valid click button green password"),
-	R4("TSLP001004 Admin login valid dan menekan enter keyboard"),
-	R5("TSAP001001 Admin masuk ke halaman admin"),
+	R1("TSLP001001 admin login valid click button signin"), //1
+	R2("TSLP001002 admin login valid click button green username"), //1
+	R3("TSLP001003 admin login valid click button green password"), //1
+	R4("TSLP001004 Admin login valid dan menekan enter keyboard"), //1
+	R5("TSAP001001 Admin masuk ke halaman admin"), //1
 	
-	A1("TSMP001001 Admin buka halaman modul"),
-	A2("TSMP002001 Admin cari data berdasarkan nama modul menggunakan enter pada keyboard"),
-	A3("TSMP002002 Admin cari data berdasarkan nama modul menggunakan button hijau"),
-	A4("TSMP002003 Admin cari data berdasarkan nama modul menggunakan button search"),
+	B1("TSDU001001 Admin membuka data users page"),//1
+	B2("TSDU002 Admin mencari name, email, dan status dengan tombol search"),//3
+	B3("TSDU002 Admin mencari name, email, dan status data dengan tombol hijau"),//3
+	B4("TSDU002 Admin mencari name, email, dan status data dengan enter"),//3
+	B5("TSDU003001 Admin menampilkan data dengan status NON ACTIVE"),//1
+	B6("TSDU004 Admin ingin menampilkan beberapa data NON ACTIVE berdasarkan name dan email menggunakan tombol search"),//2
+	B7("TSDU004 Admin ingin menampilkan beberapa data NON ACTIVE berdasarkan name dan email menggunakan tombol hijau"),//2
+	B8("TSDU004 Admin ingin menampilkan beberapa data NON ACTIVE berdasarkan name dan email menggunakan enter");//2
 	
-	B1("TSDU001001 Admin open data users page"),
-	B2("TSDU002001 Admin mencari nama dengan tombol search"),
-	B3("TSDU002002N Admin mencari nama dengan tombol hijau"),
-	B4("TSDU002003 Admin mencari nama dengan enter"),
-	B5("TSDU002004 Admin mencari email dengan tombol search"),
-	B6("TSDU002005N Admin mencari email dengan tombol hijau"),
-	B7("TSDU002006 Admin mencari email dengan enter"),
-	B8("TSDU002007 Admin mencari status dengan tombol search");
+	
 	private String testName;
 	
 	private PSIKOTESScene(String value) {

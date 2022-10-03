@@ -1,7 +1,5 @@
 //Author : Runanto
-//Created-date: 29/09/2022
-//Modifer:
-//Modified_date:
+//Created-date: 29-09-2022 13.00
 
 package com.sqa.psikotes.framework.page;
 
@@ -18,18 +16,13 @@ import com.sqa.psikotes.framework.utils.Utils;
 public class LoginPage {
 
 		
-		private WebDriver driver;
-		public LoginPage() {
-			this.driver = DriverSingleton.getDriver();
-			PageFactory.initElements(driver, this);
-		}
+	private WebDriver driver;
+	public LoginPage() {
+		this.driver = DriverSingleton.getDriver();
+		PageFactory.initElements(driver, this);
+	}
 	
-	@FindBy(id="tl_login-1-51550_text")
-	private WebElement txtUsername;
-	
-	@FindBy(id="tl_login-1-51551_text")
-	private WebElement txtPassword;
-	
+	//Button 
 	@FindBy(xpath="//button[@id='51552_query']/span")
 	private WebElement btnSignIn;
 	
@@ -40,9 +33,6 @@ public class LoginPage {
 	@FindBy(id="tl_login-1-51551_finder")
 	private WebElement btnGreenPassword;
 	
-	@FindBy(id="nikita-form-dialog-tag")
-	private WebElement txtWelcome;
-	
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2]")
 	private WebElement btnOk;
 	
@@ -51,6 +41,13 @@ public class LoginPage {
 	
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='TIDAK'])[1]/following::span[1]")
 	private WebElement btnTidak;
+	
+	//Validation txt
+	@FindBy(id="tl_login-1-51550_text")
+	private WebElement txtUsername;
+	
+	@FindBy(id="tl_login-1-51551_text")
+	private WebElement txtPassword;
 	
 	@FindBy(xpath="//font[normalize-space()='PSIKOTEST']")
 	private WebElement txtPsikotes;
@@ -63,60 +60,65 @@ public class LoginPage {
 	}
 	
 	public void loginValidTwo(String username, String password) {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtUsername);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.txtUsername.sendKeys(username);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.txtPassword.sendKeys(password);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnSignIn.click();
-		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnOk);
-		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnOk.click();
-		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
 		
 	}
 	
+	public void logout() {
+		btnOk.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnAccount.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnTidak.click();
+	}
+	
+	
+	//Click Method
 	public void clickBtnSignIn() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnSignIn.click();
 	}
 	
 	public void clickBtnGreenUsername() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnGreenUsername.click();
 	}
 	
 	public void clickBtnGreenPassword() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnGreenPassword.click();
 	}
 	
 	public void clickOk() {
 		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnOk);
-		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnOk.click();
-		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
-	
-	public void logout() {
-		btnOk.click();
-		btnAccount.click();
-		btnTidak.click();
-	}
-	
+		
 	public void clickEnterUsername() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.txtUsername.sendKeys(Keys.ENTER);
 	}
 	
 	public void clickEnterPassword() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.txtPassword.sendKeys(Keys.ENTER);
 	}
 	
 	
-	public String getTxtWelcome() {
-		
-		return txtWelcome.getText();
-	}
-	
+	//Get Text
 	public String getTxtPsikotes() {
-		
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtPsikotes);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return txtPsikotes.getText();
 	}
 	

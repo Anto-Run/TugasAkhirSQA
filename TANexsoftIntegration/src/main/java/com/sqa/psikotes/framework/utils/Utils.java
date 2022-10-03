@@ -89,9 +89,5 @@ public class Utils {
 				.until(ExpectedConditions.visibilityOf(element)).getText();
 	}
 	
-//	public static String strDriverWaitTxt(WebDriver driver, int delays, String txt) {
-//		return new WebDriverWait(driver, Duration.ofSeconds(delays))
-//				.until(ExpectedConditions.visibilityOf(txt)).getText();
-//	}
 	
 }

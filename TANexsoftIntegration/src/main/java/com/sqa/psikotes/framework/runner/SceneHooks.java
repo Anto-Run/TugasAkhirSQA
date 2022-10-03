@@ -1,7 +1,11 @@
-//Author : Runanto
-//Created-date: 29/09/2022
-//Modifier : Runanto
-//Modifeed date: 30/09/2022 01.00
+/*
+ * Author : Runanto
+ * Created date : 29/09/2022
+ * Modifer: Runanto
+ * Modifed Data : 01/10/2022
+ *
+ */
+
 package com.sqa.psikotes.framework.runner;
 
 import java.io.IOException;
@@ -28,16 +32,25 @@ public class SceneHooks extends GenerateJar {
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/psikotes/extentreport/psikotes-scene-xr.html");
+	private static PSIKOTESScene[] tests = PSIKOTESScene.values();
+	private static final int[] DATA_OUTLINE = {1,1,1,1,1,
+												1,3,3,3,1,2,2,2};
+	private String testReport = "";
+	
 
 	@Before
 	public void setUp() {
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
-		PSIKOTESScene[] tests = PSIKOTESScene.values();
-		extentTest = reports.startTest(tests[Utils.testCount].getTestName());
-		Utils.testCount++;
+		testReport = tests[Utils.testCount].getTestName();
+		extentTest = reports.startTest(testReport);
+		if(Utils.countOutline==DATA_OUTLINE[Utils.testCount])
+		{
+			Utils.countOutline=0;
+			Utils.testCount++;
+		}
+		Utils.countOutline++;
 	}
-	
 	
 	@AfterStep
 	public void getResultStatus(Scenario scenario) throws IOException {

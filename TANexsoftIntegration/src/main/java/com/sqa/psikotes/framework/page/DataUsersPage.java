@@ -1,7 +1,6 @@
-//Author : Andika Bagaskara P.N
-//Created date: 29/09/2022
-//Modifer:
-//Modifed date:
+//Author: Bagas
+//Created_date: 9/29/2022
+//Modified_date:
 
 package com.sqa.psikotes.framework.page;
 
@@ -22,6 +21,7 @@ public class DataUsersPage extends LoginPage{
 		PageFactory.initElements(driver, this);
 	}
 	
+//	Button
 	@FindBy(id = "ui-id-9")
 	private WebElement btnTask;
 	
@@ -34,6 +34,15 @@ public class DataUsersPage extends LoginPage{
 	@FindBy(xpath = "//img[@id='tl_data_users--53078_finder']")
 	private WebElement btnGreen;
 	
+//	Dropdown
+	@FindBy(xpath = "//select[@id='tl_data_users--53411_text']")
+	private WebElement dropStatus;
+	
+//	Select
+	@FindBy(xpath = "//option[@value='NON ACTIVE']")
+	private WebElement selectNon;
+	
+//	Insert
 	@FindBy(xpath = "//input[@id='tl_data_users--53078_text']")
 	private WebElement insSearch;
 	
@@ -50,7 +59,7 @@ public class DataUsersPage extends LoginPage{
 	@FindBy(xpath = "//td[@id='tl_data_users--53082-cell-0-4']")
 	private WebElement txtStatusUser;
 	
-//	Open Data Users Page
+//	Click
 	public void clickTask() {
 		btnTask.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
@@ -61,18 +70,18 @@ public class DataUsersPage extends LoginPage{
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
-	public String getTxtDataUsers() {
-		return txtDataUsers.getAttribute("value");
-	}
-	
-//	Search by name with search button
 	public void clickInsSearch() {
 		insSearch.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
-	public void insertSearch(String search) {
-		this.insSearch.sendKeys(search);
+	public void clickDrop() {
+		dropStatus.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickNon() {
+		selectNon.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
@@ -90,21 +99,38 @@ public class DataUsersPage extends LoginPage{
 		this.insSearch.sendKeys(Keys.ENTER);
 	}
 	
+//	Insert
+	public void insertSearch(String search) {
+		this.insSearch.sendKeys(search);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	
+//	Validation
+	public String getTxtDataUsers() {
+		return txtDataUsers.getAttribute("value");
+	}
+	
 	public String getTxtNameUser() {
 		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtNameUser);
 		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		System.out.println(txtNameUser.getText());
 		return txtNameUser.getText();
 	}
 	
 	public String getTxtEmailUser() {
 		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtEmailUser);
 		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		System.out.println(txtEmailUser.getText());
 		return txtEmailUser.getText();
 	}
 	
 	public String getTxtStatusUser() {
 		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtStatusUser);
 		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
+		System.out.println(txtStatusUser.getText());
 		return txtStatusUser.getText();
 	}
+	
+	
 }

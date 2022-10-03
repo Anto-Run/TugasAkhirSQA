@@ -1,7 +1,9 @@
-//Author : Runanto
-//Created-date: 29-09-2022
-//Modifer:
-//Modified date:
+/*
+ * Author : Runanto
+ * Created-date: 29/09/2022 13.00
+ * Modifer: Runanto
+ * Modified data: 01/10/2022 16.00
+ */
 
 package com.sqa.psikotes.framework.runner;
 

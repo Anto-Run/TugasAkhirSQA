@@ -22,17 +22,19 @@ public class AdminPage extends LoginPage{
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Page object
-	
+	//Button
 	@FindBy(xpath="//h3[@id='ui-id-7']")
 	private WebElement btnUserManagement;
 	
 	@FindBy(xpath="//span[normalize-space()='Admin']")
 	private WebElement btnAdmin;
 	
+	
+	//Validation (txt)
 	@FindBy(xpath="//input[@id='tl_user_management--51695_text']")
 	private WebElement txtUserManagement;
 	
+	//Method
 	public void adminPage() {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnUserManagement.click();
@@ -40,6 +42,8 @@ public class AdminPage extends LoginPage{
 		btnAdmin.click();
 	}
 	
+	
+	//Click method
 	public void clickBtnUserManagement() {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnUserManagement.click();
@@ -50,10 +54,11 @@ public class AdminPage extends LoginPage{
 		btnAdmin.click();
 	}
 	
+	
+	//get method
 	public String getTxtUserManagement() {
-		
 		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtUserManagement);
-		
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return txtUserManagement.getAttribute("value");
 	}
 	
