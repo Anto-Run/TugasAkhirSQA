@@ -33,8 +33,20 @@ public class SceneHooks extends GenerateJar {
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/psikotes/extentreport/psikotes-scene-xr.html");
 	private static PSIKOTESScene[] tests = PSIKOTESScene.values();
-	private static final int[] DATA_OUTLINE = {1,1,1,1,1,
-												1,3,3,3,1,2,2,2};
+	private static final int[] DATA_OUTLINE = {
+			/*
+			 * Nanto
+			 */
+			1, 1,1,1, 1, 6, 6, 6, 1,1, 1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1, 1,
+			
+			
+			
+			/*
+			 * Bagas
+			 */
+			1, 3,3,3, 1, 2,2,2, 1, 2,2,2, 1, 1,1,1,1,1,1,1,1,1,	1,1,1,1,1,1,1,1,	
+			1,1,1,	1,1,1,1,1,1,1,1,1,1,1,1,1,		1,1,1,1,1,1,1,
+			1,1,1,1,1,	1,1, 	1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,	1,1,1,1,1,1,1 };
 	private String testReport = "";
 	
 

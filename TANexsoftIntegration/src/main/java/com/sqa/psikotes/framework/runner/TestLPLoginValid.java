@@ -24,14 +24,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestLoginValid {
+public class TestLPLoginValid {
 	
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	
 	private LoginPage loginPage = new LoginPage ();
 	
-	public TestLoginValid() {
+	public TestLPLoginValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}

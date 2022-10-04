@@ -1,3 +1,7 @@
+//Author: Bagas
+//Created_date: 9/29/2022
+//Modified_date:
+
 package com.sqa.psikotes.framework.runner;
 
 import static org.testng.Assert.assertTrue;
@@ -13,25 +17,23 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestOpenDU {
+public class TestDUOpenUserValid {
 	
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private DataUsersPage dataUsers = new DataUsersPage ();
 	
-	public TestOpenDU() {
+	public TestDUOpenUserValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}
 	
 	@Given("TSDU001 Admin harus membuka halaman utama web")
-	public void tsdu001admin_go_to_page_login() {
+	public void tsdu001_admin_go_to_page_login() {
 		driver.get(Constants.URL);
-//		String username = "developer";
-//		String password = "23";
-//		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
-//		dataUsers.loginValidTwo(username, password);
+		driver.get(Constants.URL);
 		dataUsers.clickOk();
+		extentTest.log(LogStatus.PASS, "Admin berhasil masuk halaman utama web");
 	}
 
 	@When("TSDU001001 Admin klik menu Task")

@@ -20,13 +20,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestAdminPageValid {
+public class TestAPAdminPageValid {
 	
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private AdminPage adminPage = new AdminPage();
 	
-	public TestAdminPageValid() {
+	public TestAPAdminPageValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}
