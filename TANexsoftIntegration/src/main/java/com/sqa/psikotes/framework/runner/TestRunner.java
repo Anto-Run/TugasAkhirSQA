@@ -20,6 +20,16 @@ features = {"src/main/resources/features/001LPLoginValid.feature",
 		"src/main/resources/features/071APShow25DataAdminValid.feature",
 		"src/main/resources/features/074APShow50DataAdminValid.feature",
 		
+		
+		"src/main/resources/features/176MPOPenMPValid.feature",
+		"src/main/resources/features/179MPSearchMPValid.feature",
+		"src/main/resources/features/182MPAddMPValid.feature",
+		"src/main/resources/features/185MPShow10DataValid.feature",
+		"src/main/resources/features/188MPShow25DataValid.feature",
+		"src/main/resources/features/191MPShow50DataValid.feature",
+		"src/main/resources/features/197MPShow100DataValid.feature",
+		
+		
 
 		"src/main/resources/features/406DUOpenDUValid.feature", 
 		"src/main/resources/features/409DUSearchDataValid.feature",
