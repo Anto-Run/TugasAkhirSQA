@@ -90,4 +90,15 @@ public class Utils {
 	}
 	
 	
+	public static long getFileSize(String path) {
+		long fileSize = 0l;
+		File f = new File(path);
+		if(f.exists()){
+			fileSize = f.length();
+		}else{
+			fileSize = 0l;
+		}
+		return fileSize;
+	}
+	
 }
