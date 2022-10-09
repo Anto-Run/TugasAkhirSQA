@@ -35,6 +35,7 @@ public class TestDUEditActiveUserValid {
 		dataUsers.clickDataUsers();
 		dataUsers.clickDrop();
 		dataUsers.clickActive();
+		extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman Data Users dengan status ACTIVE");
 	}
 
 //	TSDU009001	
@@ -187,7 +188,7 @@ public class TestDUEditActiveUserValid {
 	public void tsdu009004_admin_centang_leader() {
 		dataUsers.clickLeader();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang STAFF");
+	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
 	}
 
 	@When("TSDU009004 Admin klik tombol save")
@@ -225,7 +226,7 @@ public class TestDUEditActiveUserValid {
 	public void tsdu009005_admin_hilangkan_centang_pada_kategori_staff() {
 		dataUsers.clickStaff();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
+	    extentTest.log(LogStatus.PASS, "Admin hilangkan centang pada kategori STAFF");
 	}
 
 	@When("TSDU009005 Admin klik tombol save")
@@ -263,7 +264,7 @@ public class TestDUEditActiveUserValid {
 	public void tsdu009006_admin_hilangkan_centang_pada_kategori_leader() {
 		dataUsers.clickLeader();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
+	    extentTest.log(LogStatus.PASS, "Admin hilangkan centang pada kategori LEADER");
 	}
 
 	@When("TSDU009006 Admin klik tombol save")
@@ -302,7 +303,7 @@ public class TestDUEditActiveUserValid {
 		dataUsers.clickStaff();
 		dataUsers.clickLeader();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
+	    extentTest.log(LogStatus.PASS, "Admin centang STAFF dan LEADER");
 	}
 
 	@When("TSDU009007 Admin klik tombol save")
@@ -341,7 +342,7 @@ public class TestDUEditActiveUserValid {
 		dataUsers.clickStaff();
 		dataUsers.clickLeader();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
+	    extentTest.log(LogStatus.PASS, "Admin hilangkan centang pada kategori STAFF dan LEADER");
 	}
 
 	@When("TSDU009008 Admin klik tombol save")

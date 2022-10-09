@@ -29,13 +29,14 @@ public class TestDUSearchActiveUserValid {
 	}
 	
 	@Given("TSDU006 Admin harus sudah membuka halaman Data Users ACTIVE")
-	public void tsdu005_admin_harus_membuka_halaman_data_users() {
+	public void tsdu006_admin_harus_membuka_halaman_data_users() {
 		driver.get(Constants.URL);
 		dataUsers.clickOk();
 		dataUsers.clickTask();
 		dataUsers.clickDataUsers();
 		dataUsers.clickDrop();
 		dataUsers.clickActive();
+		extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman Data UsersACTIVE");
 	}
 
 //	search with button
@@ -84,7 +85,7 @@ public class TestDUSearchActiveUserValid {
 	@When("TSDU006002 Admin klik tombol berwarna hijau")
 	public void tsdu006002_admin_klik_tombol_berwarna_hijau() {
 		dataUsers.clickSearch();
-	    extentTest.log(LogStatus.PASS, "Admin klik tombol search");
+	    extentTest.log(LogStatus.PASS, "Admin klik tombol berwarna hijau");
 	}
 
 	@Then("^TSDU006002 Tampil hasil filter ACTIVE User berdasarkan (.*)$")
@@ -111,10 +112,10 @@ public class TestDUSearchActiveUserValid {
 	    extentTest.log(LogStatus.PASS, "Admin mengisi data yang ingin dicari");
 	}
 
-	@When("TSDU006003 Admin klik tombol berwarna hijau")
-	public void tsdu006003_admin_klik_tombol_berwarna_hijau() {
+	@When("TSDU006003 Admin klik enter pada keyboard")
+	public void tsdu006003_admin_klik_enter_pada_keyboard() {
 		dataUsers.clickSearch();
-	    extentTest.log(LogStatus.PASS, "Admin klik tombol search");
+	    extentTest.log(LogStatus.PASS, "Admin klik enter pada keyboard");
 	}
 
 	@Then("^TSDU006003 Tampil hasil filter ACTIVE User berdasarkan (.*)$")

@@ -5,7 +5,7 @@
 @tag
 Feature: TSDU005 Menampilkan user active
   Background:
-  	Given TSDU005 Admin harus membuka halaman  data users
+  	Given TSDU005 Admin harus membuka halaman data users
 
   @tag1
   Scenario: TSDU005001 Admin ingin menampilkan semua data ACTIVE Users

@@ -16,7 +16,7 @@ Feature: TSAP003 Tambah data akun admin
 
     Examples: 
       | fullname         | telephone  | username  | password |
-      | Francesca Palmer | 5677867453 | Francesca | admin123 |
+      | Bagas | 5677867453 | Bagas41| admin123 |
 
   #| David Miller        |  24772473815 | David     | admin123 |
   #| Marissa Ingham      |  18500602384 | Marissa   | admin123 |
@@ -27,7 +27,7 @@ Feature: TSAP003 Tambah data akun admin
   #| Sebastian Phillips  |  45800210774 | Sebastian | admin123 |
   #| Kassandra Walsh     |  21128646330 | Kassandra | admin123 |
   @tag2
-  Scenario Outline: TSAP003002 Admin menyetujui menambahkan data akun admin
+  Scenario Outline: TSAP003002 Admin tidak menyetujui menambahkan data akun admin
     When TSAP003002 Admin mengisi field <fullname>, privilages, supervisor, <telephone>, <username>, <password>,
     And TSAP003002 Admin klik tombol save
     And TSAP003002 Admin klik no
@@ -36,8 +36,8 @@ Feature: TSAP003 Tambah data akun admin
     Examples: 
       | fullname     | telephone   | username | password |
       #| Francesca Palmer    |   5677867453 | Francesca | admin123 |
-      | David Miller | 24772473815 | David    | admin123 |
-      #| Marissa Ingham      |  18500602384 | Marissa   | admin123 |
+      #| David Miller | 24772473815 | David    | admin123 |
+      | Marissa Ingham      |  18500602384 | Marissa   | admin123 |
       #| Wade Bishop         |  15844221811 | Wade      | admin123 |
       #| Aiden Notman        |  55274164025 | Aiden     | admin123 |
       #| Tony Rowlands       |   8232713205 | Tony      | admin123 |

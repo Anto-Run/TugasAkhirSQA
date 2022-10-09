@@ -4,7 +4,7 @@
 @tag
 Feature: TSDU003 Menampilkan user non active
 	Background:
-		Given TSDU003 Admin harus membuka halaman  data users
+		Given TSDU003 Admin harus membuka halaman data users
 
   @tag1
   Scenario: TSDU003001 Admin ingin menampilkan semua data NON ACTIVE Admins

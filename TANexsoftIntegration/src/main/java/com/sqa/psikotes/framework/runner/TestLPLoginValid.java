@@ -67,8 +67,8 @@ public class TestLPLoginValid {
 		DriverSingleton.closeObjectInstance();
 	}
 
-	@When("TSLP001N002 Admin memasukan username dan password valid")
-	public void tslp001n002_admin_memasukan_username_dan_password_valid() {
+	@When("TSLP001002 Admin memasukan username dan password valid")
+	public void tslp001002_admin_memasukan_username_dan_password_valid() {
 		String username = "developer";
 		String password = "23";
 		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
@@ -76,14 +76,14 @@ public class TestLPLoginValid {
 		extentTest.log(LogStatus.PASS, "admin memasukan username dan password valid");
 	}
 
-	@When("TSLP001N002 Admin menekan tombol green button username")
-	public void tslp001n002_admin_menekan_tombol_green_button_username() {
+	@When("TSLP001002 Admin menekan tombol green button username")
+	public void tslp001002_admin_menekan_tombol_green_button_username() {
 		 loginPage.clickBtnGreenUsername();
 		 extentTest.log(LogStatus.PASS, "admin menekan tombol green username");
 	}
 	
-	@Then("TSLP001N002 Admin berhasil masuk halaman utama psikotes")
-	public void tslp001N002_admin_berhasil_masuk_halaman_utama_psikotes() {
+	@Then("TSLP001002 Admin berhasil masuk halaman utama psikotes")
+	public void tslp001002_admin_berhasil_masuk_halaman_utama_psikotes() {
 		String strExpect ="PSIKOTES";
 		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
 		extentTest.log(LogStatus.PASS, "admin berhasil masuk halaman utama psikotes");
@@ -91,8 +91,8 @@ public class TestLPLoginValid {
 		DriverSingleton.closeObjectInstance();
 	}
 
-	@When("TSLP001N003 Admin memasukan username dan password valid")
-	public void tslp001n003_admin_memasukan_username_dan_password_valid() {
+	@When("TSLP001003 Admin memasukan username dan password valid")
+	public void tslp001003_admin_memasukan_username_dan_password_valid() {
 		String username = "developer";
 		String password = "23";
 		System.out.println("admin_enter_valid_username_and_password : "+ username +" pwd : "+password);
@@ -100,13 +100,13 @@ public class TestLPLoginValid {
 		extentTest.log(LogStatus.PASS, "admin memasukan username dan password valid");
 	}
 
-	@When("TSLP001N003 Admin menekan tombol green button password")
-	public void tslp001n003_admin_menekan_tombol_green_button_password() {
+	@When("TSLP001003 Admin menekan tombol green button password")
+	public void tslp001003_admin_menekan_tombol_green_button_password() {
 		 loginPage.clickBtnGreenPassword();
 		 extentTest.log(LogStatus.PASS, "admin menekan tombol green password");
 	}
-	@Then("TSLP001N003 Admin berhasil masuk halaman utama psikotes")
-	public void tslp001N003_admin_berhasil_masuk_halaman_utama_psikotes() {
+	@Then("TSLP001003 Admin berhasil masuk halaman utama psikotes")
+	public void tslp001003_admin_berhasil_masuk_halaman_utama_psikotes() {
 		String strExpect ="PSIKOTES";
 		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
 		extentTest.log(LogStatus.PASS, "admin berhasil masuk halaman utama psikotes");
@@ -135,6 +135,8 @@ public class TestLPLoginValid {
 		String strExpect ="PSIKOTES";
 		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
 		extentTest.log(LogStatus.PASS, "admin berhasil masuk halaman utama psikotes");
+		Utils.delay(1, Constants.CHROME);
+		DriverSingleton.closeObjectInstance();
 	}
 	
 

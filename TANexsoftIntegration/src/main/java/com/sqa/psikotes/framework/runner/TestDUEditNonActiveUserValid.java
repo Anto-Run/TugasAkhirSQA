@@ -35,6 +35,7 @@ public class TestDUEditNonActiveUserValid {
 		dataUsers.clickDataUsers();
 		dataUsers.clickDrop();
 		dataUsers.clickNon();
+		extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman Data Users dengan status NON ACTIVE");
 	}
 
 //	TSDU008001
@@ -239,7 +240,7 @@ public class TestDUEditNonActiveUserValid {
 	public void TSDU008006_admin_hilangkan_centang_pada_kategori_staff() {
 		dataUsers.clickStaff();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
+	    extentTest.log(LogStatus.PASS, "Admin hilangkan centang pada kategori STAFF");
 	}
 
 	@When("TSDU008006 Admin klik tombol save")
@@ -277,7 +278,7 @@ public class TestDUEditNonActiveUserValid {
 	public void tsdu008007_admin_hilangkan_centang_pada_kategori_leader() {
 		dataUsers.clickLeader();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
+	    extentTest.log(LogStatus.PASS, "Admin hilangkan centang pada kategori LEADER");
 	}
 
 	@When("TSDU008007 Admin klik tombol save")
@@ -316,7 +317,7 @@ public class TestDUEditNonActiveUserValid {
 		dataUsers.clickStaff();
 		dataUsers.clickLeader();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
+	    extentTest.log(LogStatus.PASS, "Admin centang STAFF dan LEADER");
 	}
 
 	@When("TSDU008008 Admin klik tombol save")
@@ -356,7 +357,7 @@ public class TestDUEditNonActiveUserValid {
 		dataUsers.clickStaff();
 		dataUsers.clickLeader();
 	    dataUsers.clickKategori();
-	    extentTest.log(LogStatus.PASS, "Admin centang LEADER");
+	    extentTest.log(LogStatus.PASS, "Admin hilangkan centang pada kategori STAFF dan LEADER");
 	}
 
 	@When("TSDU008009 Admin klik tombol save")

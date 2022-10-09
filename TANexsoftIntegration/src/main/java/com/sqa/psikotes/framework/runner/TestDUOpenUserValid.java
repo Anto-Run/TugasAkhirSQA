@@ -31,9 +31,8 @@ public class TestDUOpenUserValid {
 	@Given("TSDU001 Admin harus membuka halaman utama web")
 	public void tsdu001_admin_go_to_page_login() {
 		driver.get(Constants.URL);
-		driver.get(Constants.URL);
 		dataUsers.clickOk();
-		extentTest.log(LogStatus.PASS, "Admin berhasil masuk halaman utama web");
+		extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman utama web");
 	}
 
 	@When("TSDU001001 Admin klik menu Task")

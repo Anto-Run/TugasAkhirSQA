@@ -29,6 +29,7 @@ public class TestDUViewUserValid {
 		dataUsers.clickOk();
 		dataUsers.clickTask();
 		dataUsers.clickDataUsers();
+		extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman Data Users");
 	}
 
 	@When("TSDU007001 Admin klik icon view Admins")

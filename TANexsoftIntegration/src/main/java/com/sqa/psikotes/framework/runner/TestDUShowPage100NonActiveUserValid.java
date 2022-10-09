@@ -36,6 +36,7 @@ public class TestDUShowPage100NonActiveUserValid {
 		dataUsers.clickOk();
 		dataUsers.clickTask();
 		dataUsers.clickDataUsers();
+		extentTest.log(LogStatus.PASS, "Admin harus membuka halaman data user");
 	}
 
 	@When("TSDU011026 Admin klik p100")
@@ -55,6 +56,7 @@ public class TestDUShowPage100NonActiveUserValid {
 	@Given("TSDU011027 Admin harus sudah membuka halaman Data Users NON ACTIVE dengan show page p100")
 	public void tsdu011027_admin_harus_sudah_membuka_halaman_data_users_non_active_dengan_show_page_p100() {
 		dataUsers.clickOneHundred();
+		extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman Data Users NON ACTIVE dengan show page p100r");
 	}
 
 	@When("TSDU011027 Admin klik angka h1 di atas tabel sebelah kanan")

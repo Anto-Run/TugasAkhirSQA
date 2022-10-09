@@ -6,7 +6,7 @@
       <class name="com.sqa.psikotes.framework.runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="16 17 18 19 20 21 22"/>
+          <include name="runScenario" invocation-numbers="23 24"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.sqa.psikotes.framework.runner.TestRunner -->

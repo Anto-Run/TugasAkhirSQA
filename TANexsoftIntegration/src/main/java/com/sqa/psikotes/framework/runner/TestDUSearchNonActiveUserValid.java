@@ -1,3 +1,7 @@
+//Author: Bagas
+//Created_date: 10/1/2022
+//Modified_date:
+
 package com.sqa.psikotes.framework.runner;
 
 import static org.testng.Assert.assertTrue;
@@ -32,7 +36,7 @@ public class TestDUSearchNonActiveUserValid {
 		dataUsers.clickDataUsers();
 		dataUsers.clickDrop();
 		dataUsers.clickNon();
-		 extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman Data Users NON ACTIVE");
+		extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman Data Users NON ACTIVE");
 	}
 
 //	search with button
@@ -43,8 +47,8 @@ public class TestDUSearchNonActiveUserValid {
 	}
 
 	@When("^TSDU004001 Admin mengisi (.*) yang ingin dicari$")
-	public void tsdu004001_admin_mengisi_dataone_yang_ingin_dicari(String dataone) {
-	    dataUsers.insertSearch(dataone);
+	public void tsdu004001_admin_mengisi_dataone_yang_ingin_dicari(String dataOne) {
+	    dataUsers.insertSearch(dataOne);
 	    extentTest.log(LogStatus.PASS, "Admin mengisi data yang ingin dicari");
 	}
 
@@ -54,7 +58,7 @@ public class TestDUSearchNonActiveUserValid {
 	    extentTest.log(LogStatus.PASS, "Admin klik tombol search");
 	}
 
-	@Then("^TSDU004001 Tampil hasil filter NON ACTIVE User berdasarkan name dan email (.*)$")
+	@Then("^TSDU004001 Tampil hasil filter NON ACTIVE User berdasarkan (.*)$")
 	public void tsdu004001_tampil_hasil_filter_non_active_user_berdasarkan_name_dan_email(String dataOne) {
 	    i++;
 	    if(i==1) {
@@ -84,7 +88,7 @@ public class TestDUSearchNonActiveUserValid {
 	    extentTest.log(LogStatus.PASS, "Admin klik tombol berwarna hijau");
 	}
 
-	@Then("^TSDU004002 Tampil hasil filter NON ACTIVE User berdasarkan name dan email (.*)$")
+	@Then("^TSDU004002 Tampil hasil filter NON ACTIVE User berdasarkan (.*)$")
 	public void tsdu004002_tampil_hasil_filter_non_active_user_berdasarkan_name_dan_email_datatwo(String dataTwo) {
 		i++;
 	    if(i==3) {
@@ -114,10 +118,10 @@ public class TestDUSearchNonActiveUserValid {
 	    extentTest.log(LogStatus.PASS, "Admin menekan enter pada keyboard");
 	}
 
-	@Then("^TSDU004003 Tampil hasil filter NON ACTIVE User berdasarkan name dan email (.*)$")
+	@Then("^TSDU004003 Tampil hasil filter NON ACTIVE User berdasarkan (.*)$")
 	public void tsdu004003_tampil_hasil_filter_non_active_user_berdasarkan_name_dan_email_datathree(String dataThree) {
 		i++;
-	    if(i==3) {
+	    if(i==5) {
 	    	assertTrue(dataUsers.getTxtNameUser().contains(dataThree));
 	    } else {
 	    	assertTrue(dataUsers.getTxtEmailUser().contains(dataThree));

@@ -35,7 +35,7 @@ Feature: TSDU006 Mencari user active
   Scenario Outline: TSDU006003 Admin ingin menampilkan beberapa data ACTIVE berdasarkan name dan email menggunakan enter pada keyboard
     When TSDU006003 Admin klik search field
     And TSDU006003 Admin mengisi <datathree> yang ingin dicari
-    And TSDU006003 Admin klik tombol berwarna hijau
+    And TSDU006003 Admin klik enter pada keyboard
     Then TSDU006003 Tampil hasil filter ACTIVE User berdasarkan <datathree>
 
     Examples: 

@@ -1,3 +1,7 @@
+//Author: Bagas
+//Created_date: 9/30/2022
+//Modified_date:
+
 package com.sqa.psikotes.framework.runner;
 
 import static org.testng.Assert.assertTrue;
@@ -24,12 +28,13 @@ public class TestDUShowNonActiveUserValid {
 		extentTest = SceneHooks.extentTest;
 	}
 	
-	@Given("TSDU003 Admin harus membuka halaman  data users")
+	@Given("TSDU003 Admin harus membuka halaman data users")
 	public void tsdu003_admin_harus_membuka_halaman_data_users() {
 		driver.get(Constants.URL);
 		dataUsers.clickOk();
 		dataUsers.clickTask();
 		dataUsers.clickDataUsers();
+		extentTest.log(LogStatus.PASS, "Admin harus sudah membuka halaman Data Users");
 	}
 
 	@When("TSDU003001 Admin klik tombol untuk dropdown yang ada di sebelah kanan search field")

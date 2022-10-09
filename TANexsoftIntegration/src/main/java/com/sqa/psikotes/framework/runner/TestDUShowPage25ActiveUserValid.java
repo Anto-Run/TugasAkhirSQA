@@ -38,6 +38,7 @@ public class TestDUShowPage25ActiveUserValid {
 		dataUsers.clickDataUsers();
 		dataUsers.clickDrop();
 		dataUsers.clickActive();
+		extentTest.log(LogStatus.PASS, "Admin harus membuka halaman data user");
 	}
 
 	@When("TSDU011041 Admin klik p25")
@@ -57,6 +58,7 @@ public class TestDUShowPage25ActiveUserValid {
 	@Given("TSDU011042 Admin harus sudah membuka halaman Data Users ACTIVE dengan show page p25")
 	public void tsdu011042_admin_harus_sudah_membuka_halaman_data_users_active_dengan_show_page_p25() {
 		dataUsers.clickTwentyFive();
+		extentTest.log(LogStatus.PASS, "Admin harus membuka halaman data user");
 	}
 
 	@When("TSDU011042 Admin klik angka h1 di atas tabel sebelah kanan")

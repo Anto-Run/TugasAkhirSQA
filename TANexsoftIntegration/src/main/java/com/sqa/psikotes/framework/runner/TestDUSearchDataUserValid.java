@@ -1,8 +1,8 @@
-package com.sqa.psikotes.framework.runner;
-
 //Author: Bagas
 //Created_date: 9/29/2022
 //Modified_date:
+
+package com.sqa.psikotes.framework.runner;
 
 import static org.testng.Assert.assertTrue;
 
@@ -36,7 +36,7 @@ public class TestDUSearchDataUserValid {
 		dataUsers.clickTask();
 		dataUsers.clickDataUsers();
 		dataUsers.clickInsSearch();
-		extentTest.log(LogStatus.PASS, "Admin Admin harus klik field search Data Users pada halaman Data Users");
+		extentTest.log(LogStatus.PASS, "Admin harus klik field search Data Users pada halaman Data Users");
 	}
 
 //	search data with button search
@@ -116,6 +116,4 @@ public class TestDUSearchDataUserValid {
 		}
 	    extentTest.log(LogStatus.PASS, "Tampil nama yang dicari");
 	}
-	
-
 }

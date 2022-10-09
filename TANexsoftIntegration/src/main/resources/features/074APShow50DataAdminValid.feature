@@ -30,5 +30,4 @@ Feature: TSAP007 Menampilkan50 data admin
     When TSAP007004 Admin klik button page <<
     Then TSAP007004 Admin berhasil menampilkan50 data admin pada page <<
     
-    
 
